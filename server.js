@@ -4,7 +4,6 @@ const express = require('express');
 const path = require('path');
 // create a routes variable that requires the indexRoutes.js page in the routes folder.
 const api = require('./routes/indexRoutes.js');
-const { publicDecrypt } = require('crypto');
 
 // create a PORT varible to the port number
 const PORT = 3001;

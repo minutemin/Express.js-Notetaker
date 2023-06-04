@@ -10,5 +10,7 @@ const path = require('path');
 
 // write POST code from user to db
 
+// write DELETE code to delete note from db
+
 //export router module
 module.exports = router
