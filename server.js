@@ -3,8 +3,8 @@ const express = require('express');
 // create a path variable that requires the path.
 const path = require('path');
 // create a routes variable that requires the indexRoutes.js page in the routes folder.
-const api = require('./routes/indexRoutes.js');
-
+const index = require('./routes/indexRoutes.js');
+const api = require('./routes/notesRoutes.js');
 // create a PORT varible to the port number
 const PORT = 3001;
 // create an app variable that calls the express function
@@ -14,7 +14,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Middleware for linking to pageRoutes and notesRoutes
-app.use('/api', api);
+app.use('/', index);
+app.use('/', api);
 // Middleware static for public folder
 app.use(express.static('public'));
 
