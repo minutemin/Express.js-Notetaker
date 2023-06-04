@@ -3,9 +3,9 @@ const router = require('express').Router();
 // require path
 const path = require('path');
 // require fs
-const fs = require
+const fs = require('fs');
 // require with db varible the database db.json
-
+const db = require('./db/db.json');
 // write GET code from db to user
 
 // write POST code from user to db
