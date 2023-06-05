@@ -1,7 +1,7 @@
 // require router with express.Router
 const router = require('express').Router();
 // require path
-// const path = require('path');
+const path = require('path');
 // require fs
 const fs = require('fs');
 // require with db varible the database db.json
@@ -25,7 +25,7 @@ router.post('/api/notes', (req, res) => {
         title: req.body.title,
         text: req.body.text,
         id: uuidv4(),
-    };
+    }
     db.push(note);
     console.log(db);
     fs.writeFileSync('./db/db.json', JSON.stringify(db));

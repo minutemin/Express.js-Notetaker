@@ -1,14 +1,13 @@
 // Create an express variable that requires express.  Make sure to install express
 const express = require('express');
-// create a path variable that requires the path.
-const path = require('path');
-// create a routes variable that requires the indexRoutes.js page in the routes folder.
+// create an app variable that calls the express function
+const app = express();
+// create a routes variable that requires the indexRoutes and notes page in the routes folder.
 const index = require('./routes/indexRoutes.js');
 const api = require('./routes/notesRoutes.js');
 // create a PORT varible to the port number
-const PORT = 3001;
-// create an app variable that calls the express function
-const app = express();
+const PORT = process.env.PORT || 3001;
+
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());

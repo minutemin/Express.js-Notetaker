@@ -5,7 +5,7 @@ const path = require('path');
 
 // get homepage for index.html
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.htm'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 });
 
 //get notes html page

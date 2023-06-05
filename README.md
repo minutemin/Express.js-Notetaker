@@ -14,7 +14,6 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 
 ## Description
@@ -27,9 +26,11 @@ For this project, you will need to install npm.
 
 ## Usage
 
-To use this app, install npm and start it.  The console should say that it is now listening to port 3001.  In the page 3001, you should see the homepage with the "Get Started" button.  Click that and it should take you to the notes page.  When you start to type in the Note title, there should be a SAVE icon appearing in the top right corner.  You can type in text for  each note.  When you click save, the note should appear on the left side of the page in a list order.  For every new note created, it will be stored in that list to the left! 
+To use this app, install npm and start it.  The console should say that it is now listening to port 3001.  In the page 3001, you should see the homepage with the "Get Started" button.  Click that and it should take you to the notes page.  You will see to the right and area to type in a note title and text. to the left is a section where the notes will be listed.   When both title and text are filled, a save icon will appear in the top right corner of the window.  When you click save, the note should appear on the left side of the page in a list order.  For every new note created, it will be stored in that list to the left! 
 
-![Screenshot of homework 11](assets/images/screenshot.png)
+![Screenshot 1 of homework 11](assets/SS-Notetaker.png)
+![Screenshot 2 of homework 11](assets/SS-Notetaker1.png)
+![Screenshot 3 of homework 11](assets/SS-Notetaker2.png)
 
 ## License
 Please refer to the link below if you need to read the terms and conditions of the license:
