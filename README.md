@@ -22,7 +22,7 @@ For this assignment, we were given a project that needed the back end built to c
 
 ## Installation
 
-For this project, you will need to install npm.  
+For this project, you will need to to have node and npm installed to run the application from the terminal, using local host, or click on the heroku link to use in website. 
 
 ## Usage
 
