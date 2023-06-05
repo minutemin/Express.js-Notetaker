@@ -32,7 +32,7 @@ router.post('/api/notes', (req, res) => {
     res.json(db);
 })
 
-
+// BONUS !!!!
 // write DELETE code to delete note from db
 router.delete('/api/notes/:id', (req, res) => {
     console.log("Hello World")
