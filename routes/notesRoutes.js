@@ -36,19 +36,23 @@ router.post('/api/notes', (req, res) => {
 // write DELETE code to delete note from db
 router.delete('/api/notes/:id', (req, res) => {
     console.log("Hello World")
-    //create a new db variable for an empty array where new db will go
+    // create a new db variable for an empty array where new db will go
     let newDb = []; 
     console.log(req.params);
+    // create noteId for the id parameters
     const noteId = req.params.id;
-
+    // for loop for pushing new db to newDb 
     for (let i = 0; i < db.length; i++) {
         if (noteId !== db[i].id) {
             newDb.push(db[i])
         }
     }
     console.log(newDb);
+    // changed db from const to let so it can be changed to newDb to rewrite the new db without the chosen note to be deleted.
     db = newDb;
+    // write to sync in db.json and stringify the data
     fs.writeFileSync('./db/db.json', JSON.stringify(db));
+    // respond with the updated db
     res.json(db);
 });
   
