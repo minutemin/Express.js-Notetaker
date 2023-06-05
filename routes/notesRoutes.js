@@ -5,7 +5,7 @@ const path = require('path');
 // require fs
 const fs = require('fs');
 // require with db varible the database db.json
-const db = require('../db/db.json');
+let db = require('../db/db.json');
 //require uuid 
 const { v4: uuidv4 } = require('uuid');
 
@@ -36,7 +36,31 @@ router.post('/api/notes', (req, res) => {
 // write DELETE code to delete note from db
 router.delete('/api/notes/:id', (req, res) => {
     console.log("Hello World")
-    // const note = {
+    //create a new db variable for an empty array where new db will go
+    let newDb = []; 
+    console.log(req.params);
+    const noteId = req.params.id;
+
+    for (let i = 0; i < db.length; i++) {
+        if (noteId !== db[i].id) {
+            newDb.push(db[i])
+        }
+    }
+    console.log(newDb);
+    db = newDb;
+    fs.writeFileSync('./db/db.json', JSON.stringify(db));
+    res.json(db);
+});
+  
+//export router module
+module.exports = router;
+
+
+
+
+
+
+  // const note = {
     //     title: req.body.title,
     //     text: req.body.text,
     //     id: uuidv4(),
@@ -49,7 +73,6 @@ router.delete('/api/notes/:id', (req, res) => {
     // res.json(db);
     
 
-    // const noteId = req.params.id;
     // router.filter(({noteId}) => id !== req.params.id);
     // res.json(db);
 
@@ -61,8 +84,5 @@ router.delete('/api/notes/:id', (req, res) => {
     //         writeToFile('./db/db.json', results);
     //         res.json(`Note ${noteId} has been deleted.`);
     //     });
-});
 
 
-//export router module
-module.exports = router;

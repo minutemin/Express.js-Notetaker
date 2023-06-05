@@ -26,7 +26,7 @@ For this project, you will need to install npm.
 
 ## Usage
 
-To use this app, install npm and start it.  The console should say that it is now listening to port 3001.  In the page 3001, you should see the homepage with the "Get Started" button.  Click that and it should take you to the notes page.  You will see to the right and area to type in a note title and text. to the left is a section where the notes will be listed.   When both title and text are filled, a save icon will appear in the top right corner of the window.  When you click save, the note should appear on the left side of the page in a list order.  For every new note created, it will be stored in that list to the left! 
+To use this app, install npm and start it.  The console should say that it is now listening to port 3001.  In the page 3001, you should see the homepage with the "Get Started" button.  Click that and it should take you to the notes page.  You will see to the right and area to type in a note title and text to the left is a section where the notes will be listed.   When both title and text are filled, a save icon will appear in the top right corner of the window.  When you click save, the note should appear on the left side of the page in a list order.  For every new note created, it will be stored in that list to the left! If you want to delete a note, you can click on the trash icon and it will be deleted from the database. 
 
 ![Screenshot 1 of homework 11](assets/SS-Notetaker.png)
 ![Screenshot 2 of homework 11](assets/SS-Notetaker1.png)
