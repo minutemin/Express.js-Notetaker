@@ -2,9 +2,6 @@
 const router = require('express').Router();
 //require path
 const path = require('path');
-const api = require('./notesRoutes.js');
-
-app.use('/api', api);
 
 // get homepage for index.html
 router.get('/', (req, res) => {
