@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Middleware for linking to pageRoutes and notesRoutes
 app.use('/', index);
-app.use('/api', api);
+app.use('/api/notes', api);
 // Middleware static for public folder
 app.use(express.static('public'));
 

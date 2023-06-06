@@ -11,7 +11,7 @@ const { v4: uuidv4 } = require('uuid');
 
 
 // write GET code from db to user
-router.get('/notes', (req, res) => {
+router.get('/', (req, res) => {
     res.json(db);
 });
 // router.get('/', (req, res) => {
@@ -20,7 +20,7 @@ router.get('/notes', (req, res) => {
 
 
 // write POST code from user to db
-router.post('/notes', (req, res) => {
+router.post('/', (req, res) => {
     const note = {
         title: req.body.title,
         text: req.body.text,
@@ -34,7 +34,7 @@ router.post('/notes', (req, res) => {
 
 // BONUS !!!!
 // write DELETE code to delete note from db
-router.delete('/notes/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     console.log("Hello World")
     // create a new db variable for an empty array where new db will go
     let newDb = []; 
